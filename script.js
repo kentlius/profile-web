@@ -1,6 +1,3 @@
-const today = new Date();
-document.getElementById("current-year").innerHTML = today.getFullYear();
-
 const contentContainer = document.getElementById("content");
 contents.forEach((item) => {
   contentContainer.innerHTML += `
@@ -10,3 +7,6 @@ contents.forEach((item) => {
         </article>
     `;
 });
+
+const today = new Date();
+document.getElementById("current-year").innerHTML = today.getFullYear();
