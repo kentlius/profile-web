@@ -87,8 +87,6 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -141,6 +139,7 @@ nav ul {
 
 nav a:hover {
   text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 main {
@@ -168,6 +167,14 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(var(--foreground-rgb), 0.1);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+article:hover {
+  border-color: rgba(var(--foreground-rgb), 0.2);
+  cursor: pointer;
 }
 
 aside {
@@ -181,6 +188,14 @@ aside {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  border: 1px solid rgba(var(--foreground-rgb), 0.1);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#bio {
+  text-align: center;
 }
 
 footer {
